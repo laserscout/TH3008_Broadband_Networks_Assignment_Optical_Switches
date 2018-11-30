@@ -1,5 +1,33 @@
+\documentclass[11pt]{article}
+  \usepackage{geometry}
+  \geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm,
+    right=2.2cm}
+  \usepackage{fontspec}
+  \usepackage[nonumeralsign]{xgreek}
+  \usepackage{cite}
+  \usepackage{caption}
+  \usepackage{graphicx}
+  \usepackage{subcaption}
 
+  \setmainfont{Baskerville}
+  \setmonofont{Consolas}
+
+  \graphicspath{ {./images/} }
+
+  \begin{document}
+  \input{intro.tex}
+  \input{datacenters.tex}
+  \input{networks-on-chip.tex}
+  \input{terabit-eth.tex}
+
+  \bibliographystyle{ieeetr}
+  \bibliography{cites}{}
+  % \bibliographystyle{plain}
+
+  \end{document}
+  
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
+%%% TeX-engine: xetex
 %%% End:
