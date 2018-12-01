@@ -5,7 +5,7 @@ ifeq ($(UNAME_S),Linux)
 endif
 
 ifeq ($(UNAME_S),Darwin)
-	PDFVIEW = "" #; skimview $@
+	PDFVIEW = "" ; skimview $@
 endif
 
 .PHONY: main.pdf all clean

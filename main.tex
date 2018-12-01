@@ -2,30 +2,43 @@
   \usepackage{geometry}
   \geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm,
     right=2.2cm}
-  \usepackage{fontspec}
-  \usepackage[nonumeralsign]{xgreek}
-  \usepackage{cite}
-  \usepackage{caption}
-  \usepackage{graphicx}
-  \usepackage{subcaption}
 
-  \setmainfont{Baskerville}
-  \setmonofont{Consolas}
+% \documentclass[11pt]{IEEEtran}
+\usepackage{fontspec}
+\usepackage[nonumeralsign]{xgreek}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
 
-  \graphicspath{ {./images/} }
+\setmainfont{Baskerville}
+\setmonofont{Consolas}
 
-  \begin{document}
-  \input{intro.tex}
-  \input{lasor.tex}
-  \input{datacenters.tex}
-  \input{networks-on-chip.tex}
-  \input{terabit-eth.tex}
+\graphicspath{ {./images/} }
 
-  \bibliographystyle{ieeetr}
-  \bibliography{cites}{}
-  % \bibliographystyle{plain}
+\title{Εξελίξεις και ιστορία της οπτικής μεταγωγής}
+\author{Φρανκ Μπλάννινγ - 6698 [frankgou@auth.gr] \\ Ζήσης Μήλης Εμμανουήλ - 8053
+  [zemmanox@auth.gr]}
+\date{\today}
 
-  \end{document}
+\begin{document}
+
+\maketitle
+
+\input{intro.tex}
+\input{lasor.tex}
+\input{iris.tex}
+\input{boom.tex}
+\input{components.tex}
+\input{datacenters.tex}
+\input{networks-on-chip.tex}
+\input{terabit-eth.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{cites}{}
+% \bibliographystyle{plain}
+
+\end{document}
   
 %%% Local Variables:
 %%% mode: latex
